@@ -1,11 +1,11 @@
 ## Portfolio
 
 This codebase is the source for my own portfolio. It tells about my technical side, projects worked and even about who and what I am.
-[Click to see the portfolio](http://localhost:3000/ab-212)
+[Click to see the portfolio](https://recapitulationzen.com/arun-ravichandran-1101/)
 
 ## Stack
 
-### It is a Single Page Application which uses the following:
+### It is a Single Page Application which uses the following packages:
 
 - ReactJs
 - SCSS
