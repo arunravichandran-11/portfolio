@@ -1,0 +1,30 @@
+.skill-container {
+  width: calc(100% - 300px);
+  margin-left: 300px;
+  height: 100%;
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid;
+  overflow: auto;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.skill-container {
+  & > div {
+    text-align: left;
+    width: 50%;
+    height: 40%;
+    margin: 40px 0px;
+    display: inline-block;
+    position: relative;
+    & > canvas {
+      position: absolute;
+      top: 10;
+    }
+  }
+}
