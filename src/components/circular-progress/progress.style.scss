@@ -1,0 +1,19 @@
+.progress-container {
+  width: 450px;
+  height: 450px;
+  margin: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-container {
+  .CircularProgressbar-text {
+    font-size: 12px !important;
+  }
+}
+
+.skill-name {
+  padding: 8px 0px;
+}

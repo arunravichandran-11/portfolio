@@ -1,0 +1,26 @@
+.tabs {
+  min-height: 150px;
+  width: 100%;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+}
+
+.tabs .tab {
+  color: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  padding: 6px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  width: 50%;
+  box-sizing: border-box;
+  border-bottom: black;
+}
+.tabs .tab:hover,
+.tabs .tab.active {
+  border-bottom: 2px solid black;
+}
+.tabs .content {
+  padding: 10px 28px;
+  color: rgba(0, 0, 0, 0.6);
+  background: rgba(255, 255, 255, 0.2);
+  text-align: justify;
+}

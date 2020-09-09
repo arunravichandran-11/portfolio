@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1598783260266" clover="3.2.0">
+  <project timestamp="1598783260267" name="All files">
+    <metrics statements="125" coveredstatements="93" conditionals="16" coveredconditionals="13" methods="61" coveredmethods="43" elements="202" coveredelements="149" complexity="0" loc="125" ncloc="125" packages="17" files="24" classes="24"/>
+    <package name="src">
+      <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="app.js" path="/Users/arun/Desktop/Desktop/Portfolios/my-portfolio/src/app.js">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+      </file>
+      <file name="app.routing.js" path="/Users/arun/Desktop/Desktop/Portfolios/my-portfolio/src/app.routing.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/arun/Desktop/Desktop/Portfolios/my-portfolio/src/index.js">
+        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.BaseComponents">
+      <metrics statements="20" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="14" coveredmethods="0"/>
+      <file name="UserContext.js" path="/Users/arun/Desktop/Desktop/Portfolios/my-portfolio/src/BaseComponents/UserContext.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+      </file>
+      <file name="ab.component.js" path="/Users/arun/Desktop/Desktop/Portfolios/my-portfolio/src/BaseComponents/ab.component.js">
+        <metrics statements="8" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+      </file>
+      <file name="gs.component.js" path="/Users/arun/Desktop/Desktop/Portfolios/my-portfolio/src/BaseComponents/gs.component.js">
+        <metrics statements="9" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Navigation">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="nav-link.component.js" path="/Users/arun/Desktop/Desktop/Portfolios/my-portfolio/src/components/Navigation/nav-link.component.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.bar-chart">
+      <metrics statements="6" coveredstatements="6" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+      <file name="bar-chart.js" path="/Users/arun/Desktop/Desktop/Portfolios/my-portfolio/src/components/bar-chart/bar-chart.js">
+        <metrics statements="6" coveredstatements="6" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+        <line num="7" count="7" type="stmt"/>
+        <line num="8" count="7" type="stmt"/>
+        <line num="10" count="7" type="stmt"/>
+        <line num="13" count="7" type="stmt"/>
+        <line num="44" count="7" type="stmt"/>
+        <line num="58" count="7" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.circular-progress">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="progress.component.js" path="/Users/arun/Desktop/Desktop/Portfolios/my-portfolio/src/components/circular-progress/progress.component.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.doughnut-chart">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="doughnut-chart.js" path="/Users/arun/Desktop/Desktop/Portfolios/my-portfolio/src/components/doughnut-chart/doughnut-chart.js">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.drawer">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="drawer.component.js" path="/Users/arun/Desktop/Desktop/Portfolios/my-portfolio/src/components/drawer/drawer.component.js">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="48" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.pie-chart">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="pie-chart.js" path="/Users/arun/Desktop/Desktop/Portfolios/my-portfolio/src/components/pie-chart/pie-chart.js">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="33" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.content">
+      <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="arun.js" path="/Users/arun/Desktop/Desktop/Portfolios/my-portfolio/src/content/arun.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+      </file>
+      <file name="gomathy.js" path="/Users/arun/Desktop/Desktop/Portfolios/my-portfolio/src/content/gomathy.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+      </file>
+      <file name="gomathy_desc.js" path="/Users/arun/Desktop/Desktop/Portfolios/my-portfolio/src/content/gomathy_desc.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="short_desc.js" path="/Users/arun/Desktop/Desktop/Portfolios/my-portfolio/src/content/short_desc.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.fonts">
+      <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="font-exporter.js" path="/Users/arun/Desktop/Desktop/Portfolios/my-portfolio/src/fonts/font-exporter.js">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="33" count="7" type="cond" truecount="2" falsecount="0"/>
+      </file>
+    </package>
+    <package name="src.modules.about">
+      <metrics statements="13" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
+      <file name="about.js" path="/Users/arun/Desktop/Desktop/Portfolios/my-portfolio/src/modules/about/about.js">
+        <metrics statements="13" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="116" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.modules.awards">
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="award.js" path="/Users/arun/Desktop/Desktop/Portfolios/my-portfolio/src/modules/awards/award.js">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.modules.projects">
+      <metrics statements="24" coveredstatements="20" conditionals="8" coveredconditionals="5" methods="10" coveredmethods="9"/>
+      <file name="projects.component.js" path="/Users/arun/Desktop/Desktop/Portfolios/my-portfolio/src/modules/projects/projects.component.js">
+        <metrics statements="24" coveredstatements="20" conditionals="8" coveredconditionals="5" methods="10" coveredmethods="9"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="28" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
+        <line num="43" count="2" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
+        <line num="48" count="3" type="stmt"/>
+        <line num="50" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="51" count="3" type="stmt"/>
+        <line num="54" count="3" type="stmt"/>
+        <line num="81" count="2" type="stmt"/>
+        <line num="93" count="3" type="stmt"/>
+        <line num="102" count="4" type="stmt"/>
+        <line num="106" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.modules.resume">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+      <file name="resume.js" path="/Users/arun/Desktop/Desktop/Portfolios/my-portfolio/src/modules/resume/resume.js">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="69" count="7" type="stmt"/>
+        <line num="125" count="1" type="stmt"/>
+        <line num="152" count="1" type="stmt"/>
+        <line num="153" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.modules.resume-two">
+      <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="11" coveredmethods="11"/>
+      <file name="resume-two.js" path="/Users/arun/Desktop/Desktop/Portfolios/my-portfolio/src/modules/resume-two/resume-two.js">
+        <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="11" coveredmethods="11"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="70" count="1" type="stmt"/>
+        <line num="86" count="1" type="stmt"/>
+        <line num="102" count="1" type="stmt"/>
+        <line num="124" count="1" type="stmt"/>
+        <line num="166" count="1" type="stmt"/>
+        <line num="215" count="1" type="stmt"/>
+        <line num="226" count="7" type="stmt"/>
+        <line num="242" count="1" type="stmt"/>
+        <line num="243" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.modules.skills">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="skills.js" path="/Users/arun/Desktop/Desktop/Portfolios/my-portfolio/src/modules/skills/skills.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.utils">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="utils.js" path="/Users/arun/Desktop/Desktop/Portfolios/my-portfolio/src/utils/utils.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
