@@ -28,6 +28,7 @@ class PieChartProgress extends React.Component {
       datasets: [
         {
           label: 'Softwares',
+          // backgroundColor: ['#B21F00', '#C9DE00', '#2FDE00', '#00A6B4', '#6800B4', '#C9DE00', '#GE1F00', 'lightgreen'],
           backgroundColor: ['#FF0000', '#00CED1', '#4B0082', '#228B22', '#A52A2A', '#696969'],
           hoverBackgroundColor: ['#501800', '#4B5000', '#175000', '#003350', '#35014F'],
           data: skilLevels,

@@ -1,3 +1,4 @@
+/* Style the accordion section */
 .accordion__section {
   display: flex;
   flex-direction: column;
@@ -5,6 +6,7 @@
 
 .accordion__section {
   .accordion {
+    // background-color: #eee;
     background-color: transparent;
     color: white;
     cursor: pointer;
@@ -33,12 +35,14 @@
   }
 
   .accordion__content {
+    // background-color: white;
     overflow: auto;
-    transition: max-height 0.6s ease, min-height 0.6s ease;
+    transition: max-height 0.6s ease;
     max-height: 100px;
     padding: 0px 24px;
   }
 
+  /* Style the accordion content text */
   .accordion__text {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;

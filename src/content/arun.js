@@ -2,8 +2,10 @@ let information = {
   name: 'Arun Ravichandran',
   role: 'Software Engineer',
   profilepic: 'user.jpg',
-  summary:
-    'An experienced engineer who always loves and thrives to improve the business with programming skills, technology and by being a good inspiration to the team. A good knowledge in SDLC models (not just the predefined one but with the ideas and skills to create one).',
+  //summary:
+   // 'An experienced engineer who always loves and thrives to improve the business with programming skills, technology and by being a good inspiration to the team. A good knowledge in SDLC models (not just the predefined one but with the ideas and skills to create one).',
+  summary: 
+  `An energetic and passionate software developer with experience of 5+ years in building SASS products with robust coding skills to improve the user experience and worked collaboratively with agile team members and third-party service providers to deliver a better experience to our customers on-time. In a previous organization, I was awarded for my contribution to reducing the investment(billing), mentoring the team, and enhancing the performance of our website.`
   email: 'arunravichandran11@gmail.com',
   mobile: 9940749097,
   location: 'Chennai, India',
