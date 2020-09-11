@@ -4,6 +4,10 @@ import './carousel-slider.scss';
 class CarouselSlider extends React.Component {
   render() {
     return (
+      //   <div className='tech-slideshow'>
+      //     <div className='mover-1'></div>
+      //     <div className='mover-2'></div>
+      //   </div>
       <div class='container'>
         <div id='myCarousel' class='carousel slide' data-ride='carousel'>
           <div class='carousel-inner'>

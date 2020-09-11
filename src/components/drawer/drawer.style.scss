@@ -8,6 +8,21 @@
   background-color: black;
   text-align: center;
 
+  .list-component {
+    .nav-link-container {
+      svg {
+        display: none;
+      }
+      .lebel {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 1023px) {
+    // width: 100px;
+    display: none;
+  }
   h4,
   h2,
   h6,
@@ -53,36 +68,81 @@
   }
 }
 
-.list-component {
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-  }
-
-  li {
-    line-height: 3;
-    padding: 0px 32px;
-    text-transform: uppercase;
-    position: relative;
-
-    &:hover {
-      background-color: rgba(255, 255, 255, 0.08);
-    }
-  }
-
-  li {
-    border-bottom: 1px solid grey;
-    div {
+.drawer-component {
+  .list-component {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
       text-align: left;
     }
 
-    a {
-      color: white;
-      text-decoration: none;
-      width: 100%;
-      display: block;
+    li {
+      line-height: 3;
+      padding: 0px 32px;
+      text-transform: uppercase;
+      position: relative;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.08);
+      }
+    }
+
+    li {
+      border-bottom: 1px solid grey;
+      div {
+        text-align: left;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .drawer-component {
+    width: 64px;
+    margin: 0;
+    padding: 0;
+
+    .name,
+    .role {
+      display: none;
+    }
+
+    .logo {
+      width: 45px;
+      height: 45px;
+      font-size: 45px;
+    }
+
+    .list-component {
+      li {
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+
+        div {
+          text-align: center;
+        }
+      }
+      .nav-link-container {
+        a {
+          padding: 10px 0px;
+        }
+        svg {
+          display: inline-block;
+        }
+        .label,
+        .dot {
+          display: none;
+        }
+      }
     }
   }
 }

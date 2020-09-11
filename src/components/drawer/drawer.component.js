@@ -2,13 +2,17 @@ import React, {useContext} from 'react';
 import {useRouteMatch} from 'react-router-dom';
 import CustomNavLink from '../Navigation/nav-link.component';
 
+import IconComponent from '@fonts-exporter/font-exporter';
+
 import Accordion from '@components/accordion/accordion';
+
+import DeveloperBoardIcon from '@material-ui/icons/DeveloperBoard';
 
 import './drawer.style.scss';
 
 import UserContext from '../../BaseComponents/UserContext';
 
-function Drawer() {
+function Drawer(props) {
   const content = useContext(UserContext);
 
   const firstChar = content.name.charAt(0);
@@ -19,16 +23,19 @@ function Drawer() {
       id: 1,
       name: 'Skills',
       link: `${umath.url}/skills`,
+      icon: 'laptop-code',
     },
     {
       id: 2,
       name: 'About Me',
       link: `${umath.url}/about`,
+      icon: 'user',
     },
     {
       id: 3,
       name: 'Projects',
       link: `${umath.url}/projects`,
+      icon: 'brief-case',
       subLinks: [
         {
           id: 3.1,
@@ -49,7 +56,9 @@ function Drawer() {
       id: 4,
       name: 'Awards',
       link: `${umath.url}/awards`,
+      icon: 'certificate',
     };
+    // navigationLink[...awards];
     navigationLink.push(awards);
   }
 
@@ -57,12 +66,12 @@ function Drawer() {
     <div className='drawer-component'>
       <div className='top-section'>
         <div className='logo'>{firstChar}</div>
-        <h4 className='name'>{content.name}</h4>
+        {/* <h4 className='name'>{content.name}</h4> */}
         <h5 className='role'>{content.role}</h5>
       </div>
       <div className='list-component'>
         <ul>
-          {navigationLink.map((item, index) => {
+          {props.items.map((item, index) => {
             if (item.subLinks) {
               return (
                 <li key={index}>
@@ -79,7 +88,7 @@ function Drawer() {
             }
             return (
               <li key={index}>
-                <CustomNavLink to={item.link} label={item.name}></CustomNavLink>
+                <CustomNavLink icon={<IconComponent iconType='fas' iconName={item.icon} size='2x' />} to={item.link} label={item.name}></CustomNavLink>
               </li>
             );
           })}

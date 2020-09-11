@@ -1,9 +1,9 @@
 import React from 'react';
-import './resume.scss';
+import './index.scss';
 
-// import IconComponent from '@fonts-exporter/font-exporter';
+import IconComponent from '@fonts-exporter/font-exporter';
 
-class ResumeComponent extends React.Component {
+class ResumeFormatOne extends React.Component {
   renderTemplate(userProfile) {
     return (
       <div id='resume-wrap'>
@@ -35,7 +35,7 @@ class ResumeComponent extends React.Component {
                   <div className='stepper--vertical__circle'></div>
                   <div className='stepper--vertical__details'>
                     <h3 className='heading__three'>Profession Summary</h3>
-                    <p className='paragraph'>{userProfile.summary}</p>
+                    <p className='paragraph summary'>{userProfile.summary}</p>
                     <div className='button__rectangle'></div>
                   </div>
                 </div>
@@ -155,11 +155,11 @@ class ResumeComponent extends React.Component {
   render() {
     let content = this.props.content;
     return (
-      <div id='resume-container' className='resume-component-container'>
+      <div id='print-resume' className='resume-format-one'>
         {this.renderTemplate(content)}
       </div>
     );
   }
 }
 
-export default ResumeComponent;
+export default ResumeFormatOne;

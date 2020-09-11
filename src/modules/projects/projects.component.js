@@ -2,7 +2,13 @@ import React, {Component, useState, useContext} from 'react';
 import './projects.styles.scss';
 
 import AwesomeSlider from 'react-awesome-slider';
-import AwesomeSliderStyles from 'react-awesome-slider/src//core/styles.scss';
+// import AwesomeSliderStyles from 'react-awesome-slider/src/styles';
+
+import AwesomeSliderStyles from 'react-awesome-slider/src/core/styles.scss';
+
+import withAutoplay from 'react-awesome-slider/dist/autoplay';
+
+const AutoplaySlider = withAutoplay(AwesomeSlider);
 
 const images = require.context('./images', true);
 import IconComponent from '../../fonts/font-exporter';
@@ -10,7 +16,11 @@ import UserContext from '../../BaseComponents/UserContext';
 
 function Slider(props) {
   const [scrollTo, setScroll] = useState('bottom');
+
+  // let content = useContext(UserContext);
+
   let content = props.content;
+
   let scrollElement = React.createRef();
 
   function scrollToBottom() {
@@ -81,9 +91,18 @@ function Slider(props) {
   }
 
   return (
-    <AwesomeSlider cssModule={AwesomeSliderStyles} className='awesome-slider-plugin' name='projects-slider' organicArrows={false}>
+    <AutoplaySlider
+      play={true}
+      cancelOnInteraction={true} // should stop playing on user interaction
+      interval={6000}
+      mobileTouch={true}
+      cssModule={AwesomeSliderStyles}
+      className='awesome-slider-plugin'
+      name='projects-slider'
+      organicArrows={true}
+    >
       {renderProjects(content)}
-    </AwesomeSlider>
+    </AutoplaySlider>
   );
 }
 

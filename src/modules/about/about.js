@@ -1,11 +1,17 @@
 import React, {useContext} from 'react';
 import './about-me.style.scss';
 import IconComponent from '@fonts-exporter/font-exporter';
+import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/IconButton';
+import DeleteIcon from '@material-ui/icons/Delete';
+
+import GetAppIcon from '@material-ui/icons/GetApp';
+import ButtonComponent from '@components/button-component/button';
+
+import ResumeFormatOne from '../resume/format-one';
+import ResumeFormatTwo from '../resume/format-two';
 
 import * as html2pdf from 'html2pdf.js';
-
-import ResumeComponent from '../resume/resume';
-import MyResume from '../my-resume/resume';
 
 const images = require.context('./images', true);
 import UserContext from '../../BaseComponents/UserContext';
@@ -32,9 +38,12 @@ class About extends React.Component {
       },
     };
 
-    let element = document.getElementById('inner-container');
+    let element = document.getElementById('print-resume');
 
     html2pdf().from(element).set(options).outputPdf().save();
+    // .then((done) => {
+    //   alert('done'), (error) => alert('error');
+    // });
   }
 
   render() {
@@ -45,13 +54,21 @@ class About extends React.Component {
       transform: `scale(${content.scalePhoto})`,
     };
 
+    let mediaMatch = window.matchMedia('(max-width: 800px)');
+
+    const downloadButton = mediaMatch.matches ? (
+      <ButtonComponent type='icon' icon={<GetAppIcon />} onClick={this.handleClick} />
+    ) : (
+      <ButtonComponent label='Download Resume' icon={<GetAppIcon />} onClick={this.handleClick} />
+    );
+
     return (
       <div className='about-me-container'>
         <div className='wrapper'>
-          <div className='btn btn-primary' onClick={this.handleClick} style={{zIndex: 9999}}>
-            <i className='icon icon-cart'></i>
-            Download Resume
-          </div>
+          {downloadButton}
+
+          <h1 className='name'>{content.name}</h1>
+
           <div className='outside'>
             <div className='inside'>
               <img src={img} style={profileImageStyle}></img>
@@ -60,18 +77,66 @@ class About extends React.Component {
 
           {content.hints && (
             <div>
-              <h1>Software Engineer | Volleyball player | Hodophile !</h1>
+              <h1>Software Engineer | Volleyball Player | Hodophile !</h1>
             </div>
           )}
-
           <div className='summary'>
-            <h2>Looking for an enthusiastic and dedicated {content.role} ? How about we have a quick discussion. ? :)</h2>
-            <h4> </h4>
+            {/* <h2>Looking for an enthusiastic and dedicated {content.role} ? How about we have a quick discussion. ? :)</h2> */}
+            {/* <h4> </h4> */}
 
             <p className='description'>{content.summary}</p>
             <p className='description'>I request you to have a look on projects and skills section to know about my works and area of expertise.</p>
-            <p>Interested............. ? I'm waiting for your call!!!</p>
+            {/* <p>Interested............. ? I'm waiting for your call!!!</p> */}
           </div>
+
+          {/* <h4 className='who'>Who I am</h4>
+              <p className='description'>{content.whoyouare}</p>
+              <h4 className='what'>What I am</h4>
+              <p className='description'>{content.whatyouare}</p>
+            </p> */}
+          {/* <CarouselSlider />
+           */}
+
+          {/* <div className='summary'>
+            <AutoplaySlider
+              animation='cubeAnimation'
+              bullets={false}
+              infinite={true}
+              cssModule={AwesomeSliderStyles}
+              name='projects-slider'
+              organicArrows={false}
+              play={true}
+              cancelOnInteraction={false} // should stop playing on user interaction
+              interval={6000}
+            >
+              <p className=''>
+                I am {content.name}. {content.summary}
+              </p>
+              <p className=''>
+                I am {content.name}. {content.summary}
+              </p>
+              <p className=''>
+                I am {content.name}. {content.summary}
+              </p>
+            </AutoplaySlider>
+          </div> */}
+
+          {/* <div class='tech-slideshow'>
+            <div class='mover-1'></div>
+            <div class='mover-2'></div>
+          </div> */}
+
+          {/* <div className='who-and-what'>
+            <h4 className='who'>Who I am</h4>
+            <p className='description'>{content.whoyouare}</p>
+            <h4 className='what'>What I am</h4>
+            <p className='description'>{content.whatyouare}</p>
+
+            <Tabs>
+              Who Am I ?<span>{content.whoyouare}</span>
+              What Am I ?<span>{content.whatyouare}</span>
+            </Tabs>
+          </div> */}
 
           <div className='social-media-section'>
             <div>
@@ -101,9 +166,11 @@ class About extends React.Component {
           </div>
         </div>
 
-        <div className='resume-holder'>
-          {content.id === 3107 ? <ResumeComponent content={content}></ResumeComponent> : <MyResume content={content}></MyResume>}
-        </div>
+        <div className='resume-holder'>{content.id === 3107 ? <ResumeFormatOne content={content} /> : <ResumeFormatTwo content={content} />}</div>
+
+        {/* <div className='resume-holder' id='resume-holder'>
+          <ResumeComponent content={content}></ResumeComponent>
+        </div> */}
       </div>
     );
   }
@@ -111,29 +178,3 @@ class About extends React.Component {
 
 About.contextType = UserContext;
 export default About;
-
-{
-  /* <div className='summary'>
-            <AutoplaySlider
-              animation='cubeAnimation'
-              bullets={false}
-              infinite={true}
-              cssModule={AwesomeSliderStyles}
-              name='projects-slider'
-              organicArrows={false}
-              play={true}
-              cancelOnInteraction={false} // should stop playing on user interaction
-              interval={6000}
-            >
-              <p className=''>
-                I am {content.name}. {content.summary}
-              </p>
-              <p className=''>
-                I am {content.name}. {content.summary}
-              </p>
-              <p className=''>
-                I am {content.name}. {content.summary}
-              </p>
-            </AutoplaySlider>
-          </div> */
-}
