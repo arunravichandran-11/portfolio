@@ -8,6 +8,8 @@ class Awards extends React.Component {
 
     return (
       <div className='awards-container'>
+        {/* <h3>Awards</h3> */}
+
         <div className='certificate-wrap'>
           {certifications.map((award, index) => {
             let img = images('./' + award.image).default;

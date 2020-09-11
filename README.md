@@ -3,6 +3,8 @@
 This codebase is the source for my own portfolio. It tells about my technical side, projects worked and even about who and what I am.
 [Click to see the portfolio](https://recapitulationzen.com/arun-ravichandran-1101/)
 
+![Alt text](./public/portfolio.gif?raw=true 'Title')
+
 ## Stack
 
 ### It is a Single Page Application which uses the following packages:

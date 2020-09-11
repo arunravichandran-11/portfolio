@@ -1,5 +1,6 @@
 import React from 'react';
 import {Doughnut} from 'react-chartjs-2';
+import './doughnut-chart.scss';
 
 class DoughnutChartProgress extends React.Component {
   render() {
@@ -21,20 +22,28 @@ class DoughnutChartProgress extends React.Component {
     };
 
     const options = {
-      title: {
-        display: true,
-        fontSize: 18,
-      },
+      responsive: true,
       legend: {
+        fullWidth: false,
         display: true,
-        position: 'left',
+        position: this.props.legendPosition || 'left',
         labels: {
-          fontSize: 17,
+          fontSize: 14,
+          boxWidth: 20,
+          padding: 20,
+          usePointStyle: true,
         },
       },
     };
 
-    return <Doughnut data={state} options={options} />;
+    const {name} = this.props;
+
+    return (
+      <div className='chart-wrapper'>
+        {name && <h3 className='title'>{name}</h3>}
+        <Doughnut data={state} options={options} />
+      </div>
+    );
   }
 }
 

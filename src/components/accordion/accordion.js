@@ -20,7 +20,11 @@ function Accordion(props) {
   return (
     <div className='accordion__section'>
       <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
+        {/* <p>
+          <CustomNavLink to={'/'} label={props.title}></CustomNavLink>
+        </p> */}
         <p className='accordion__title'>{props.title}</p>
+        {/* <Chevron className={`${setRotate}`} width={10} fill={'#777'} /> */}
       </button>
       <div ref={content} style={{maxHeight: `${setHeight}`, minHeight: `${setMinHeight}`}} className='accordion__content'>
         <div className='accordion__text'>{props.children}</div>

@@ -11,8 +11,9 @@ let information = {
     'To be specific about who you are part of me, I would call few words for the help like energetiic, organised and enthusiastic, an inspiring and collaborative leader with responsibility in the acivity that I take part.',
   whatyouare:
     'Passionate Software Engineer who wishes to make the life of customers happy and easy by taking up innovative and challenging Coding tasks to give value to the Product and the Customers. I am a kind of person who likes to see(myself) and suggest(teammates/juniors) coding as a `Smile on our customer` and not just as a phase of Software Development Life Cycle. And I personally, have a faith in taking up a small risk factor at work when it comes to innovation.',
-  summary:
-    'With an experience of 5+ years in building software, I have a decent track records on providing good user experience by improvising the application performance and reducing the business investment with efficient code optimisation.',
+  // summary:
+  //   'With an experience of 5+ years in building software, I have a decent track records on providing good user experience by improvising the application performance and reducing the business investment with efficient code optimisation.',
+  summary: `An energetic and passionate software developer with experience of 5+ years in building SASS products with robust coding skills to improve the user experience and worked collaboratively with agile team members and third-party service providers to deliver a better experience to our customers on-time. In a previous organization, I was awarded for my contribution to reducing the investment(billing), mentoring the team, and enhancing the performance of our website.`,
   email: 'arunravichandran11@gmail.com',
   mobile: '+91 9940749097',
   location: 'Chennai, India',
