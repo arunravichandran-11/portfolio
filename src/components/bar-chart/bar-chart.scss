@@ -1,4 +1,6 @@
-.container {
-  width: 100%;
-  height: 100%;
+.bar-chart {
+  min-height: 280px;
+  canvas {
+    max-height: 300px !important;
+  }
 }

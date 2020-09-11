@@ -1,5 +1,6 @@
 import React from 'react';
 import {HorizontalBar, Bar} from 'react-chartjs-2';
+import {Redirect} from 'react-router-dom';
 import './bar-chart.scss';
 
 class BarChartProgress extends React.Component {
@@ -11,12 +12,13 @@ class BarChartProgress extends React.Component {
     });
 
     const options = {
+      responsive: true,
       legend: {
         labels: {
-          boxWidth: 60,
+          // boxWidth: 60,
           boxColor: 'blue',
           fontColor: 'black',
-          fontSize: 20,
+          // fontSize: 20,
           fillStyle: 'blue',
           backgroundColor: 'blue',
           generateLabels: function () {},
@@ -33,9 +35,9 @@ class BarChartProgress extends React.Component {
               display: this.props.type === 'horizontal' ? false : true,
             },
             ticks: {
-              min: 0,
-              stepSize: 1,
-              max: 5,
+              // min: 0,
+              // stepSize: 1,
+              // max: 5,
             },
           },
         ],
@@ -63,21 +65,25 @@ class BarChartProgress extends React.Component {
           hoverBackgroundColor: ['#501800', '#4B5000', '#175000', '#003350', '#35014F'],
           data: skilLevels,
           barPercentage: 0.8,
-          borderWidth: 1,
+          categoryPercentage: 0.8,
+          // barThickness: 6,
+          // maxBarThickness: 10,
+          minBarLength: 8,
         },
       ],
     };
 
+    const {name} = this.props;
     return (
-      <div className='container'>
-        {this.props.type === 'horizontal' ? (
-          <HorizontalBar data={state} width={100} height={50} options={options} />
-        ) : (
-          <Bar data={state} width={100} height={50} options={options} />
-        )}
+      <div className='chart-wrapper bar-chart'>
+        {name && <h3 className='title'>{name}</h3>}
+        {this.props.type === 'horizontal' ? <HorizontalBar data={state} width={100} height={50} options={options} /> : <Bar data={state} options={options} />}
       </div>
     );
   }
 }
 
 export default BarChartProgress;
+
+// {this.props.type === 'vertical' ? && <span className='dot'></span>}
+// {match && <span className='dot'></span>}

@@ -14,10 +14,12 @@
   }
 
   a:hover {
+    // text-decoration: underline;
     border-bottom: 2px solid;
   }
 
   a.active {
+    // text-decoration: underline;
     border-bottom: 2px solid;
     span.dot {
       display: inline-block;
